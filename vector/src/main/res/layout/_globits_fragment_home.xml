@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?riotx_header_panel_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/_home_screen_bg"
+            android:orientation="vertical">
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/layout_horizontal_margin"-->
+<!--                android:layout_marginEnd="@dimen/layout_horizontal_margin"-->
+<!--                android:fontFamily="@font/quicksand_bold"-->
+<!--                android:text="@string/start_using_service"-->
+<!--                android:textColor="?riot_primary_text_color"-->
+<!--                android:textSize="16sp"-->
+<!--                tools:ignore="HardcodedText" />-->
+
+<!--            <androidx.legacy.widget.Space-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="16dp" />-->
+
+            <LinearLayout
+                android:id="@+id/btn_signup_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_horizontal_margin"
+                android:layout_marginEnd="@dimen/layout_horizontal_margin"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/_button_bgtop_client_start_service"
+                    >
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/insurance"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:tint="@color/white" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center"
+                        android:text="@string/registration"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        style="@style/CommonTextTitle"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_arrow"
+                        android:background="@drawable/_bg_6"
+                        android:tint="@color/riotx_accent"
+                        />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/step_message"
+                    style="@style/CommonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="88dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/_button_bgbotton_client_start_service"
+                    android:lineHeight="21dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Mời bạn cập nhập thông tin cá nhân trước khi trả lời câu hỏi sàng lọc (Các trường có dấu * không được bỏ trống)"
+                    android:textColor="#FB0F00"
+
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText,RtlSymmetry"
+                    tools:targetApi="p" />
+
+            </LinearLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_horizontal_margin"
+                android:layout_marginEnd="@dimen/layout_horizontal_margin"
+                style="@style/CommonTextTitle"
+                android:text="@string/business_functions"
+                android:textColor="?riot_primary_text_color"
+                android:textSize="18sp" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_horizontal_margin"
+                android:layout_marginEnd="@dimen/layout_horizontal_margin"
+                android:clipChildren="false"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btn_appointment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="218dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/_button_bg_landing_menu_icon"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/appointment_icon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_appointment" />
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/CommonTextTitlePrimary"
+                        android:text="@string/visit"
+                        android:textAlignment="center"
+                        android:textColor="#2557E4"
+                        android:textSize="16sp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/layout_horizontal_margin"
+                        android:layout_marginEnd="@dimen/layout_horizontal_margin"
+                        android:layout_marginBottom="@dimen/layout_horizontal_margin"
+                        android:text="Xem lại thông tin các lần khám của bạn"
+                        style="@style/CommonText"
+                        android:textAlignment="center"
+                        android:textColor="#5E606A"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText,NestedWeights"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:lineHeight="23dp"
+                        tools:targetApi="p" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/btn_lab_tests"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="218dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/_button_bg_landing_menu_icon"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/lab_test_icon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/lab_test" />
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/CommonTextTitlePrimary"
+                        android:text="@string/lab_tests"
+                        android:textAlignment="center"
+                        android:textColor="#2557E4"
+                        android:textSize="16sp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/layout_horizontal_margin"
+                        android:layout_marginEnd="@dimen/layout_horizontal_margin"
+                        android:layout_marginBottom="@dimen/layout_horizontal_margin"
+                        android:text="Theo dõi kết quả xét nghiệm bạn đã thực hiện"
+                        style="@style/CommonText"
+                        android:textAlignment="center"
+                        android:textColor="#5E606A"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText,NestedWeights"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:lineHeight="23dp"
+                        tools:targetApi="p" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_horizontal_margin"
+                android:layout_marginEnd="@dimen/layout_horizontal_margin"
+                android:clipChildren="false"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btn_prescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="218dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/_button_bg_landing_menu_icon"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/drug_prescription_icon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_drug"/>
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/CommonTextTitlePrimary"
+                        android:text="@string/drug_prescriptions"
+                        android:textAlignment="center"
+                        android:textColor="#2557E4"
+                        android:textSize="16sp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/layout_horizontal_margin"
+                        android:layout_marginEnd="@dimen/layout_horizontal_margin"
+                        android:layout_marginBottom="@dimen/layout_horizontal_margin"
+                        android:text="Danh sách các đơn thuốc của bạn"
+                        style="@style/CommonText"
+                        android:textAlignment="center"
+                        android:textColor="#5E606A"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText,NestedWeights"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:lineHeight="23dp"
+                        tools:targetApi="p" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/btn_personal_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="218dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/_button_bg_landing_menu_icon"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/profile_icon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_profile"/>
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/CommonTextTitlePrimary"
+                        android:text="@string/personal_profile_short"
+                        android:textAlignment="center"
+                        android:textColor="#2557E4"
+                        android:textSize="16sp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/layout_horizontal_margin"
+                        android:layout_marginEnd="@dimen/layout_horizontal_margin"
+                        android:layout_marginBottom="@dimen/layout_horizontal_margin"
+                        android:text="Quản lý thông tin cá nhân của bạn"
+                        style="@style/CommonText"
+                        android:textAlignment="center"
+                        android:textColor="#5E606A"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText,NestedWeights"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:lineHeight="23dp"
+                        tools:targetApi="p" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_horizontal_margin"
+                android:layout_marginEnd="@dimen/layout_horizontal_margin"
+                android:clipChildren="false"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btn_billing"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="218dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/_button_bg_landing_menu_icon"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/billing_icon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_bill"/>
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/CommonTextTitlePrimary"
+                        android:text="@string/billing"
+                        android:textAlignment="center"
+                        android:textColor="#2557E4"
+                        android:textSize="16sp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/layout_horizontal_margin"
+                        android:layout_marginEnd="@dimen/layout_horizontal_margin"
+                        android:layout_marginBottom="@dimen/layout_horizontal_margin"
+                        android:text="Danh sách các hoá đơn của bạn"
+                        style="@style/CommonText"
+                        android:textAlignment="center"
+                        android:textColor="#5E606A"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText,NestedWeights"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:lineHeight="23dp"
+                        tools:targetApi="p" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="218dp"
+                    android:layout_weight=".5"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_horizontal_margin"
+                android:layout_marginEnd="@dimen/layout_horizontal_margin"
+                style="@style/CommonTextTitle"
+                android:text="@string/contact_for_support"
+                android:textColor="?riot_primary_text_color"
+                android:textSize="18sp" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/layout_horizontal_margin"
+                android:layout_marginEnd="@dimen/layout_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="@drawable/background_infomation"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/alerter_padding_default"
+                tools:ignore="RtlSymmetry">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_phone_call"
+                        android:tint="@color/text_color_primary" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/CommonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:textColor="@color/riotx_text_color"
+                        android:text="@string/business_contact" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/contact_business"
+                        style="@style/CommonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color_primary"
+                        android:focusable="true"
+                        android:text="@string/business_contact_phone" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_phone_call"
+                        android:tint="@color/text_color_primary" />
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/CommonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:textColor="@color/riotx_text_color"
+                        android:text="@string/technical_contact" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/contact_technical"
+                        style="@style/CommonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color_primary"
+                        android:focusable="true"
+                        android:text="@string/technical_contact_phone" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/line_login" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/loginPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:gravity="center|bottom"
+            android:text="@string/copyright_teleprep"
+            android:textAppearance="@style/TextAppearance.Vector.Login.Text"
+            android:textColor="#777777"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

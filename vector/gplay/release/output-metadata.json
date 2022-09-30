@@ -1,0 +1,66 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.oceantech.xcare",
+  "variantName": "gplayRelease",
+  "elements": [
+    {
+      "type": "UNIVERSAL",
+      "filters": [],
+      "versionCode": 21259851,
+      "versionName": "1.0.0-dev",
+      "outputFile": "vector-gplay-universal-release.apk"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "armeabi-v7a"
+        }
+      ],
+      "versionCode": 21259851,
+      "versionName": "1.0.0-dev",
+      "outputFile": "vector-gplay-armeabi-v7a-release.apk"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "x86"
+        }
+      ],
+      "versionCode": 21259851,
+      "versionName": "1.0.0-dev",
+      "outputFile": "vector-gplay-x86-release.apk"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "arm64-v8a"
+        }
+      ],
+      "versionCode": 21259851,
+      "versionName": "1.0.0-dev",
+      "outputFile": "vector-gplay-arm64-v8a-release.apk"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "x86_64"
+        }
+      ],
+      "versionCode": 21259851,
+      "versionName": "1.0.0-dev",
+      "outputFile": "vector-gplay-x86_64-release.apk"
+    }
+  ]
+}
